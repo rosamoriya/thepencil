@@ -1,0 +1,576 @@
+/*********************/
+/* Site Name: thepencil.com*/
+/*********************/
+
+/*CSS Document */
+
+/*Imports **************/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Defaults **************/
+
+html {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /*Primary Button **************/
+
+ .button-primary {
+    padding: 16px;
+    border-radius: 32px;
+    background: #BA0E02;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    border: 4px solid #BA0E02;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.button-primary:hover {
+  border: 4px solid #014BC6;
+  background: #014BC6;
+}
+
+.link-primary {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+  /*Secondary Button **************/
+
+.button-secondary {
+  padding: 16px;
+  border-radius: 32px;
+  background: none;
+  color: #BA0E02;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  border: 4px solid #BA0E02;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  color: #014BC6;
+  border: 4px solid #014BC6;
+}
+
+.link-secondary {
+  color: #BA0E02;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+  /*Divider **************/
+
+hr {
+  width: 100vw;
+  height: 12px;
+  flex-shrink: 0;
+  background: #F6F6F6;
+  border: none;
+}
+  
+  /*Structure **************/
+
+  /*index.html **************/
+  
+  /*Nav **************/
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFF;
+  }
+
+  nav img {
+    height: 25px;
+    margin: 25px;
+  }
+  
+  nav ol {
+    display: flex;
+  }
+  
+  nav ol li {
+    display: inline-block;
+    margin: 10px 20px;
+  }
+
+  .link-nav {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .link-nav:hover {
+      color: #014BC6;
+    }
+
+  /*Header **************/
+
+  .header-home {
+    background-image: url(../img/header/header-home.png);
+    background-size: cover;
+  }
+
+  header section {
+    width: 100vw;
+    height: 40rem;
+    position: relative;
+    margin-left: 25px;
+  }
+
+  .hero-description {
+    position: absolute;
+    top: 9rem;
+  }
+
+  header section h1 {
+    color: black;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: -0.03rem;
+  }
+
+  header section p {
+    color: black;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    width: 39rem;
+    margin-top: -1.5rem;
+    line-height: 100%; 
+    letter-spacing: -0.0125rem;   
+  }
+
+  .button-wrapper {
+    position: absolute;
+    top: 26rem;
+  }
+
+  .button-wrapper .button-primary {
+    margin-right: 16px;
+  }
+
+
+/*Main **************/
+
+/*Benefits Section **************/
+
+.benefits {
+  height: 43rem;
+  width: 100vw;
+}
+
+.benefits h1 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 3.5rem;
+  }
+
+.benefits p {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.benefits-flex-container {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  text-align: center;
+  margin: 4rem;
+}
+
+.benefits-flex-element {
+  width: 20rem;
+}
+
+.benefits-flex-element h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.0125rem;
+}
+
+.benefits-flex-element p {
+  font-weight: 400;
+  letter-spacing: -0.0125rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*Products Section **************/
+
+.products {
+  background-color: #F6F6F6;
+  height: 58rem;
+  width: 100vw;
+}
+
+.products h1 {
+  color: black;
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 3.5rem;
+}
+
+.products-flex-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 100vw;
+  gap: 2rem;
+}
+
+.products-flex-element {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  background: #FFF;
+}
+
+.products-flex-element img {
+  width: 248px;
+}
+
+.products-flex-element h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.products-flex-element h3 {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+/*Footer **************/
+
+footer {
+  display: flex;
+  gap: 14rem;
+  width: 100vw;
+  height: 22vh;
+  margin-top: 3.5rem;
+}
+
+footer img {
+  height: 20px;
+  margin: 25px;
+}
+
+.footer-flex-container {
+  display: flex;
+  gap: 6rem;
+}
+
+.footer-flex-element {
+  align-items: left;
+  width: 15rem;
+}
+
+.footer-headline {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration-line: underline;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-list a {
+  color: black;
+}
+
+.footer-list a:hover {
+  color: #014BC6;
+}
+
+/*features.html **************/
+
+/*Header **************/
+
+.header-features {
+  background-image: url(../img/header/header-features.png);
+  background-size: cover;
+}
+
+/*Features section **************/
+
+.features-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-flex-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 25px;
+  gap: 130px;
+}
+
+.features h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.48px;
+}
+
+.feature1-text {
+  color: #EFDF34;
+  font-style: italic;
+}
+
+.feature2-text {
+  color: #015BD9;
+  font-style: italic;
+}
+
+.feature3-text {
+  color: #CB0F02;
+  font-style: italic;
+}
+
+.feature4-text {
+  color: #8B8B8B;
+  font-style: italic;
+}
+
+.features img {
+  height: 393px;
+}
+
+.features button {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  left: 87%;
+  max-width: 12%;
+  width: 100%;
+  font-size: 20px;
+  background-color: white;
+}
+
+/*buy.html **************/
+
+/*Header **************/
+
+.header-buy {
+  background-image: url(../img/header/header-buy.png);
+  background-size: cover;
+}
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.buy-flex-container {
+  padding: 25px;
+  display: flex; 
+  gap: 90px;
+}
+
+/* Columns */
+.left-column {
+  width: 445px;
+  height: 445px;
+  position: relative;
+}
+ 
+.right-column {
+  width: 715px;
+}
+
+/* Left Column */
+.left-column img {
+  width: 445px;
+  position: absolute;
+}
+
+/* Right Column / Product Description */
+.product-description {
+  margin-bottom: 40px;
+}
+
+.product-description h1 {
+  color: #000;  
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0px 0px 27px;
+}
+
+.product-description p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.24px;
+}
+
+/* Product Color */
+.product-color {
+  margin-bottom: 30px;
+}
+
+.product-color span {
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+}
+ 
+.color-choose div {
+  display: inline-block;
+  margin-top: 12px;
+}
+ 
+.color-choose input[type="radio"] {
+  display: none;
+}
+ 
+.color-choose input[type="radio"] + label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+}
+
+.color-choose input[type="radio"] + label span:hover {
+border: 3px solid #EFDF34;
+}
+ 
+.color-choose input[type="radio"]#red + label span {
+  background-color: #CB0F02;
+}
+
+.color-choose input[type="radio"]#blue + label span {
+  background-color: #015BD9;
+}
+
+.color-choose input[type="radio"]#black + label span {
+  background-color: black;
+}
+ 
+/* Product Quantity */
+
+.quantity-choose {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.quantity-choose label {
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select::before,
+.custom-select::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 9.5rem;
+  pointer-events: none;
+}
+
+.custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 60%;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 30%;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 16px;
+}
+ 
+.product-price span {
+  font-size: 24px;
+  font-weight: 800;
+  margin-right: 20px;
+  color: #000;
+}
+ 
+.product-price button {
+  font-size: 24px;
+  padding: 12px 30px;
+}
+
+/* Phrase */
+
+.write-phrase label {
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.write-phrase textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  resize: none;
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  margin-top: 12px;  
+}
